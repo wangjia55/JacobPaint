@@ -42,8 +42,10 @@ public class MyPaintView extends View {
         mPaint = new Paint();
         mPaint.setAntiAlias(true);
         mPaint.setDither(true);
-        mPaint.setStrokeWidth(5);
+        mPaint.setStrokeWidth(20);
         mPaint.setStyle(Paint.Style.STROKE);
+        mPaint.setStrokeJoin(Paint.Join.ROUND);
+        mPaint.setStrokeCap(Paint.Cap.ROUND);
         mPaint.setPathEffect(new CornerPathEffect(3));
 
         mPath = new Path();
