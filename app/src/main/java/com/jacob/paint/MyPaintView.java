@@ -72,7 +72,7 @@ public class MyPaintView extends View {
             case MotionEvent.ACTION_DOWN:
                 x = event.getX();
                 y = event.getY();
-                mPath.lineTo(x, y);
+                mPath.moveTo(x, y);
                 break;
             case MotionEvent.ACTION_MOVE:
                 x = event.getX();
